@@ -1,0 +1,12 @@
+.navBar {
+	background-color: $tertiary;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
