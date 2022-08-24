@@ -7,3 +7,22 @@ body {
 	font-size: $baseFontSize;
 	color: $primary;
 }
+
+h1 {
+	font-family: $primaryFont;
+	color: $primary;
+	margin: 0;
+}
+
+h2,
+h3,
+h4 {
+	font-family: $secondaryFont;
+	color: $primary;
+	margin: 0;
+}
+
+h1 {
+	// @include fontSize(80); - this is not working will have to check with someone.
+	font-size: 5rem;
+}
