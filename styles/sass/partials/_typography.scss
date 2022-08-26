@@ -24,5 +24,40 @@ h4 {
 
 h1 {
 	// @include fontSize(80); - this is not working will have to check with someone.
-	font-size: 5rem;
+	font-size: 6rem;
+	letter-spacing: 0px;
+}
+
+h2 {
+	font-size: 42px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.findOut {
+	text-transform: uppercase;
+	font-size: $secondaryFont;
+	text-align: center;
+	line-height: 32px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background-color: $quinary;
+	padding: 10px 30px;
+	border: none;
+}
+
+.readMore {
+	text-transform: uppercase;
+	font-size: $secondaryFont;
+	text-align: center;
+	line-height: 32px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	background-color: $quinary;
+	padding: 10px 20px;
+	border: none;
+}
+
+p {
+	line-height: 32px;
 }

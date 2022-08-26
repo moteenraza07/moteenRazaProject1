@@ -1,0 +1,32 @@
+.favouriteThingsContainer {
+	display: flex;
+	padding-bottom: 40px;
+
+	.dogWindow {
+		width: 40%;
+		position: relative;
+		left: 100px;
+		bottom: 40px;
+		z-index: 1;
+		box-shadow: -150px 15px $senary, 20px 15px $senary;
+	}
+
+	.favourite {
+		width: 32%;
+		padding-top: 85px;
+		margin-top: 105px;
+	}
+}
+
+.whereSheTravelled {
+	border: 2px solid red;
+	display: flex;
+}
+.infoTravelled {
+	width: 30%;
+	border: 2px solid blue;
+}
+.blueBeachChairs {
+	width: 30%;
+	border: 2px solid green;
+}
