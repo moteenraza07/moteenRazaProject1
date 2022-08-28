@@ -320,6 +320,12 @@ h2 {
   letter-spacing: 1px;
 }
 
+h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
 .findOut {
   text-transform: uppercase;
   font-size: "Roboto";
@@ -342,10 +348,18 @@ h2 {
   background-color: #05afc1;
   padding: 10px 20px;
   border: none;
+  margin-top: 10px;
 }
 
 p {
   line-height: 32px;
+  font-family: "Roboto";
+  color: #2c2c2c;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -480,18 +494,75 @@ header .headerImgOne .orangeEyes {
 }
 
 .whereSheTravelled {
-  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.infoTravelled {
+  width: 40%;
+  text-align: right;
+  padding: 20px;
+  padding-right: 190px;
+}
+
+.blueBeachChairs {
+  width: 40%;
+  z-index: 5;
+  position: relative;
+  top: 20px;
+  right: 280px;
+  -webkit-box-shadow: 380px 20px #f6a823, 15px 20px #f6a823;
+          box-shadow: 380px 20px #f6a823, 15px 20px #f6a823;
+}
+
+.categories {
+  padding: 110px 0 30px 0;
+  background-color: #f0efed;
+}
+
+.categoryGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
+.categoryGallery .item {
+  width: 45%;
+  padding: 40px;
+  border-radius: 10%;
+  margin: 15px 0;
+}
+.categoryGallery .item a:hover, .categoryGallery .item a:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.categoryGallery .categoryLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
-.infoTravelled {
-  width: 30%;
-  border: 2px solid blue;
+.categoryGallery .iconColor {
+  position: relative;
+  background-color: #f6a823;
+  width: 10%;
+  border-radius: 100%;
+  margin-right: 15px;
 }
-
-.blueBeachChairs {
-  width: 30%;
-  border: 2px solid green;
+.categoryGallery .icon {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+.categoryGallery .categoryParagraph {
+  text-align: left;
+  padding-left: 60px;
+  width: 120%;
 }

@@ -19,14 +19,20 @@
 }
 
 .whereSheTravelled {
-	border: 2px solid red;
 	display: flex;
+	width: 100%;
 }
 .infoTravelled {
-	width: 30%;
-	border: 2px solid blue;
+	width: 40%;
+	text-align: right;
+	padding: 20px;
+	padding-right: 190px;
 }
 .blueBeachChairs {
-	width: 30%;
-	border: 2px solid green;
+	width: 40%;
+	z-index: 5;
+	position: relative;
+	top: 20px;
+	right: 280px;
+	box-shadow: 380px 20px $tertiary, 15px 20px $tertiary;
 }
