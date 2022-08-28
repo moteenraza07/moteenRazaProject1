@@ -1,6 +1,6 @@
 .favouriteThingsContainer {
 	display: flex;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 
 	.dogWindow {
 		width: 40%;
@@ -13,7 +13,7 @@
 
 	.favourite {
 		width: 32%;
-		padding-top: 85px;
+		padding-top: 75px;
 		margin-top: 105px;
 	}
 }
@@ -21,12 +21,17 @@
 .whereSheTravelled {
 	display: flex;
 	width: 100%;
+	padding-top: 10px;
 }
 .infoTravelled {
 	width: 40%;
 	text-align: right;
 	padding: 20px;
 	padding-right: 190px;
+
+	p {
+		padding-top: 10px;
+	}
 }
 .blueBeachChairs {
 	width: 40%;

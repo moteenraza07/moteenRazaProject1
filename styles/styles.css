@@ -348,7 +348,7 @@ h3 {
   background-color: #05afc1;
   padding: 10px 20px;
   border: none;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 p {
@@ -356,6 +356,7 @@ p {
   font-family: "Roboto";
   color: #2c2c2c;
   font-size: 20px;
+  letter-spacing: 0px;
 }
 
 a {
@@ -363,7 +364,7 @@ a {
 }
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1180px;
   width: 90%;
   margin: 0 auto;
 }
@@ -476,7 +477,7 @@ header .headerImgOne .orangeEyes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .favouriteThingsContainer .dogWindow {
   width: 40%;
@@ -489,7 +490,7 @@ header .headerImgOne .orangeEyes {
 }
 .favouriteThingsContainer .favourite {
   width: 32%;
-  padding-top: 85px;
+  padding-top: 75px;
   margin-top: 105px;
 }
 
@@ -498,6 +499,7 @@ header .headerImgOne .orangeEyes {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding-top: 10px;
 }
 
 .infoTravelled {
@@ -505,6 +507,9 @@ header .headerImgOne .orangeEyes {
   text-align: right;
   padding: 20px;
   padding-right: 190px;
+}
+.infoTravelled p {
+  padding-top: 10px;
 }
 
 .blueBeachChairs {
@@ -565,4 +570,54 @@ header .headerImgOne .orangeEyes {
   text-align: left;
   padding-left: 60px;
   width: 120%;
+}
+
+.sophieJourney {
+  background-color: #f0efed;
+  padding: 90px 0;
+}
+
+.journeyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.journeyContainer .sophieImg {
+  width: 30%;
+  -webkit-box-shadow: 25px 20px #f6a823;
+          box-shadow: 25px 20px #f6a823;
+}
+.journeyContainer .journeyTextContainer {
+  width: 60%;
+}
+.journeyContainer .journeyTextContainer .findOut {
+  position: relative;
+  top: 25px;
+}
+
+.imgGallery {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery {
+  width: 95%;
+}
+
+footer {
+  background-color: #2c2c2c;
+  position: relative;
+  top: 20px;
+}
+footer p {
+  color: white;
+  text-align: center;
 }

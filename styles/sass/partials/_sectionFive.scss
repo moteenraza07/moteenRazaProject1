@@ -1,0 +1,23 @@
+.sophieJourney {
+	background-color: $solidWhite;
+	padding: 90px 0;
+}
+
+.journeyContainer {
+	display: flex;
+	justify-content: space-between;
+
+	.sophieImg {
+		width: 30%;
+		box-shadow: 25px 20px $tertiary;
+	}
+
+	.journeyTextContainer {
+		width: 60%;
+
+		.findOut {
+			position: relative;
+			top: 25px;
+		}
+	}
+}
