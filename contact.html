@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Page</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Offside&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/911821ed0d.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<a href="#mainContent" class="skipLink">Skip to the main content.</a>
+		<header>
+			<nav class="navBar">
+				<div class="wrapper">
+					<ul class="mainMenu">
+						<li class="navItem"><a href="#">Home</a></li>
+						<li class="navItem"><a href="#">About</a></li>
+						<li><a href="#" class="logo">Sophie</a></li>
+						<li class="navItem"><a href="#">Blog</a></li>
+						<li class="navItem"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="backgroundImg">
+				<div class="wrapper">
+					<h1>Get In Touch</h1>
+				</div>
+			</section>
+
+			<section class="wrapper info">
+				<div class="socialMedia">
+					<ul class="socialMediaIcons">
+						<li><i class="fa-brands fa-facebook-f socialIcon"></i></li>
+						<li><i class="fa-brands fa-twitter socialIcon"></i></li>
+						<li><i class="fa-brands fa-linkedin-in socialIcon"></i></li>
+						<li><i class="fa-brands fa-instagram socialIcon"></i></li>
+					</ul>
+
+					<div class="address">
+						<a
+							href="mailto:info@email.com? subject= Mail from our Website"
+							class="email"
+							>info@email.com</a
+						>
+						<p>
+							123-456-7890 <br />
+							123 Queen Street West, Unit 10 <br />
+							Toronto, Ontario <br />
+							M5V2ED5
+						</p>
+					</div>
+				</div>
+
+				<div>
+					<form action="" method="" class="submitForm" name="submitForm">
+						<div class="textContainer">
+							<label for="name" class="sr-only">Name</label>
+							<input type="text" id="name" placeholder="Name" />
+							<label for="emailAddress" class="sr-only">Email address </label>
+							<input
+								type="text"
+								id="emailAddress"
+								placeholder="Email address"
+							/>
+						</div>
+						<label for="message" class="sr-only">Message</label>
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="Message"
+						></textarea>
+						<button class="submitButton">Submit</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer><p>Copyright &copy; 2018 HackerYou</p></footer>
+	</body>
+</html>

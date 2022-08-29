@@ -1,0 +1,87 @@
+main {
+	background-color: $solidWhite;
+}
+
+.backgroundImg {
+	background-image: url(../assets/contact-image-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	padding: 210px 0;
+
+	h1 {
+		font-size: 80px;
+		position: relative;
+		top: 255px;
+	}
+}
+.info {
+	display: flex;
+	padding: 90px 0 190px 0;
+	justify-content: space-between;
+
+	.socialMedia {
+		background-color: white;
+		height: 320px;
+		width: 430px;
+		color: $tertiary;
+		padding: 50px 50px;
+	}
+
+	.socialMediaIcons {
+		display: flex;
+		justify-content: space-between;
+		width: 60%;
+
+		.socialIcon {
+			font-size: 30px;
+		}
+	}
+
+	.email {
+		margin-top: 30px;
+		color: $primary;
+		font-weight: bold;
+	}
+
+	.address {
+		padding-top: 20px;
+	}
+
+	.submitForm {
+		display: flex;
+		flex-direction: column;
+		width: 800px;
+
+		input {
+			padding: 20px 0;
+		}
+
+		.textContainer {
+			display: flex;
+			justify-content: space-between;
+
+			input {
+				width: 49%;
+				justify-content: space-between;
+				padding-left: 20px;
+				border: 0;
+			}
+		}
+	}
+
+	textarea {
+		border: 0;
+		border-bottom: 1px solid lightgray;
+		padding: 30px 20px;
+		margin-top: 15px;
+		transition: 0.3s;
+	}
+}
+
+footer {
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}

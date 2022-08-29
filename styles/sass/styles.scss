@@ -4,6 +4,7 @@
 @import './partials/typography';
 @import './partials/baseStyles';
 
+// Sass files for the index.html page
 @import './partials/header';
 @import './partials/sectionOne';
 @import './partials/sectionTwo';
@@ -12,3 +13,9 @@
 @import './partials/sectionFive';
 @import './partials/sectionSix';
 @import './partials/footer';
+
+// Sass files for the contact.html page
+@import './partials/contactSassFiles/main';
+
+//mediaQueryfiles
+@import './partials/mediaQueries';

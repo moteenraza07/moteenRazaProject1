@@ -1,9 +1,10 @@
 header {
 	background-color: $tertiary;
+	padding: 0 0 10px 0;
 
 	.navBar {
 		background-color: $tertiary;
-		padding: 15px 0;
+		padding: 25px 0;
 
 		.wrapper {
 			display: flex;
@@ -16,7 +17,7 @@ header {
 
 		.mainMenu {
 			display: flex;
-			width: 50%;
+			width: 60%;
 			justify-content: space-around;
 
 			li {
@@ -38,36 +39,25 @@ header {
 	h1 {
 		text-transform: uppercase;
 		line-height: 92px;
-		position: relative;
-		bottom: 40px;
-		right: 85px;
 	}
 
 	.headerContainer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: calc(100% / 2);
 	}
 
 	.allAbout {
 		width: 200px;
 		height: 120px;
 		position: relative;
-		right: 150px;
+		right: 50px;
+		top: 40px;
 	}
 
-	.headerImgOne {
-		z-index: 5;
+	.orangeEyes {
 		position: relative;
-		top: 50px;
-		left: 60px;
-
-		.orangeEyes {
-			height: 600px;
-			position: relative;
-			right: 5px;
-			box-shadow: 20px 20px white;
-		}
+		top: 90px;
+		box-shadow: 20px 20px white;
 	}
 }

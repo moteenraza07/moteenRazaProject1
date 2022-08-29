@@ -1,0 +1,110 @@
+@media (max-width: 1277px) {
+	main {
+		.favouriteThingsContainer {
+			flex-direction: column;
+			width: 100%;
+
+			.favouriteTextContainer {
+				text-align: center;
+				width: 100%;
+				padding-bottom: 61px;
+			}
+
+			.dogWindow {
+				width: 100%;
+				box-shadow: none;
+			}
+		}
+
+		.whereSheTravelled {
+			flex-direction: column-reverse;
+			width: 100%;
+
+			.textContainerTravelled {
+				text-align: center;
+				width: 100%;
+				padding-top: 61px;
+			}
+
+			.blueBeachChairs {
+				padding-top: 0;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 1145px) {
+	section {
+		.journeyContainer {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.sophieImg {
+			margin-bottom: 80px;
+		}
+
+		.sophieImg {
+			transition: 1s ease;
+		}
+
+		.sophieImg:hover {
+			-webkit-transform: rotateZ(-10deg);
+			-ms-transform: rotateZ(-10deg);
+			transform: rotateZ(-10deg);
+			transition: 1s ease;
+		}
+
+		// citation for this hover effect
+		//Brandsmen (2017) thebrandsmen source code version 2.0 [source code] https://thebrandsmen.com/css-image-hover-effects/
+
+		.journeyTextContainer {
+			text-align: center;
+		}
+	}
+
+	.categories {
+		.icon {
+			position: absolute;
+			right: 9px;
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	header {
+		.headerContainer {
+			padding-bottom: 50px;
+		}
+
+		.allAboutSophie {
+			text-align: center;
+			width: 100%;
+		}
+
+		.allAbout {
+			position: relative;
+			left: 50px;
+		}
+		.headerImgOne {
+			display: none;
+		}
+	}
+
+	.whoIsSophie {
+		text-align: center;
+	}
+}
+
+@media (max-width: 800px) {
+	.categories {
+		.iconColor {
+			width: 13%;
+		}
+		.icon {
+			position: absolute;
+			right: 9px;
+		}
+	}
+}

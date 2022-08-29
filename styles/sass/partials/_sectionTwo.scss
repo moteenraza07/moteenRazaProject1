@@ -1,43 +1,36 @@
 .favouriteThingsContainer {
 	display: flex;
-	padding-bottom: 20px;
+	justify-content: space-between;
 
 	.dogWindow {
-		width: 40%;
+		z-index: 5;
 		position: relative;
-		left: 100px;
-		bottom: 40px;
-		z-index: 1;
-		box-shadow: -150px 15px $senary, 20px 15px $senary;
+		bottom: 45px;
+		box-shadow: -350px 15px $senary, 20px 15px $senary;
 	}
 
-	.favourite {
-		width: 32%;
-		padding-top: 75px;
-		margin-top: 105px;
+	.favouriteTextContainer {
+		width: 40%;
+		text-align: left;
+		padding-top: 61px;
 	}
 }
 
 .whereSheTravelled {
 	display: flex;
-	width: 100%;
-	padding-top: 10px;
-}
-.infoTravelled {
-	width: 40%;
-	text-align: right;
-	padding: 20px;
-	padding-right: 190px;
+	justify-content: space-between;
 
-	p {
-		padding-top: 10px;
+	.textContainerTravelled {
+		width: 40%;
+		text-align: right;
+		position: relative;
+		top: 20px;
 	}
-}
-.blueBeachChairs {
-	width: 40%;
-	z-index: 5;
-	position: relative;
-	top: 20px;
-	right: 280px;
-	box-shadow: 380px 20px $tertiary, 15px 20px $tertiary;
+
+	.blueBeachChairs {
+		z-index: 5;
+		position: relative;
+		top: 20px;
+		box-shadow: 380px 20px $tertiary, 15px 20px $tertiary;
+	}
 }
