@@ -192,7 +192,72 @@
 @media (max-width: 464px) {
 	.categories {
 		.item {
-			width: 55%;
+			width: 80%;
+			padding: 25px 30px;
 		}
+
+		h3 {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 396px) {
+	header {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	.whoIsSophie {
+		.findOut {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.whoIsSophie {
+		padding: 100px 50px;
+	}
+
+	main {
+		.favouriteThingsContainer {
+			align-items: center;
+
+			.favouriteTextContainer {
+				width: 80%;
+			}
+		}
+		.whereSheTravelled {
+			align-items: center;
+
+			.textContainerTravelled {
+				width: 80%;
+			}
+		}
+	}
+
+	.journeyContainer {
+		.sophieImg {
+			width: 60%;
+		}
+	}
+
+	.categories {
+		.item {
+			padding: 0;
+			width: 80%;
+		}
+
+		.categoryParagraph {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	.imgGallery {
+		padding-left: 0;
 	}
 }
