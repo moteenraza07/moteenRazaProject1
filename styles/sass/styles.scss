@@ -14,12 +14,13 @@
 @import './partials/sectionSix';
 @import './partials/footer';
 
-//mediaQueryfiles
+//mediaQueryfiles for index.html page
 @import './partials/mediaQueries';
 
 // Sass files for the contact.html page
 @import './partials/contactSassFiles/main';
-@import './partials/contactSassFiles/mediaQueries';
+@import './partials/contactSassFiles/contactMediaQueries';
 
 // Sass files for the blog.html page
 @import './partials/blogSassFiles/main';
+@import './partials/blogSassFiles/blogMediaQueries';

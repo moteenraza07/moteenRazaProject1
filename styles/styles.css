@@ -1139,3 +1139,106 @@ ul .list::before {
   width: 100%;
   padding: 10px;
 }
+
+@media (max-width: 1420px) {
+  .mediaQuery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mediaQuery .jeremy,
+.mediaQuery .julia {
+    width: 40%;
+    left: 0px;
+  }
+  .postForm {
+    left: 0px;
+    width: 170%;
+  }
+  .postForm .textContainer {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .postForm #name,
+.postForm #emailAddress {
+    width: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  .jeremy,
+.julia {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 30%;
+  }
+  .jeremy img,
+.julia img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1056px) {
+  .postForm {
+    width: 150%;
+  }
+}
+@media (max-width: 768px) {
+  .jeremy img,
+.julia img {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .textContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .textContainer #name,
+.textContainer #emailAddress {
+    width: 100%;
+  }
+}
+@media (max-width: 488px) {
+  .jeremy img,
+.julia img {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .blogger {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogger .aboutSophie,
+.blogger .recentPostsBackground {
+    width: 100%;
+  }
+  .blogger .bloggerBackground {
+    margin-top: 20px;
+  }
+  .mediaQuery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mediaQuery .jeremy,
+.mediaQuery .julia {
+    width: 100%;
+  }
+  .mediaQuery .jeremy img,
+.mediaQuery .julia img {
+    width: 50%;
+  }
+}

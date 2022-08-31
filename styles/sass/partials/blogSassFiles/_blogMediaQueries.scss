@@ -1,0 +1,105 @@
+// Media Query for the blog.html page
+
+@media (max-width: 1420px) {
+	.mediaQuery {
+		display: flex;
+		width: 100%;
+		justify-content: space-around;
+		.jeremy,
+		.julia {
+			width: 40%;
+			left: 0px;
+		}
+	}
+
+	.postForm {
+		left: 0px;
+		width: 170%;
+
+		.textContainer {
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		#name,
+		#emailAddress {
+			width: 40%;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.jeremy,
+	.julia {
+		flex-direction: column;
+		width: 30%;
+
+		img {
+			width: 30%;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media (max-width: 1056px) {
+	.postForm {
+		width: 150%;
+	}
+}
+
+@media (max-width: 768px) {
+	.jeremy,
+	.julia {
+		img {
+			width: 50%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.textContainer {
+		flex-direction: column;
+
+		#name,
+		#emailAddress {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 488px) {
+	.jeremy,
+	.julia {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 320px) {
+	.blogger {
+		flex-direction: column;
+
+		.aboutSophie,
+		.recentPostsBackground {
+			width: 100%;
+		}
+
+		.bloggerBackground {
+			margin-top: 20px;
+		}
+	}
+
+	.mediaQuery {
+		flex-direction: column;
+
+		.jeremy,
+		.julia {
+			width: 100%;
+
+			img {
+				width: 50%;
+			}
+		}
+	}
+}
