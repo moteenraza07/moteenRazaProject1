@@ -91,8 +91,9 @@
 
 		.allAbout {
 			position: relative;
-			left: 50px;
+			left: 180px;
 		}
+
 		.headerImgOne {
 			display: none;
 		}
@@ -113,7 +114,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 806px) {
 	header {
 		.allAbout {
 			position: relative;
@@ -260,4 +261,8 @@
 	.imgGallery {
 		padding-left: 0;
 	}
+}
+
+.categoryGaller {
+	padding-left: 0px !important;
 }

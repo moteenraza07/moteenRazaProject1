@@ -32,7 +32,6 @@ ul {
 	list-style: none;
 	padding-left: 30px;
 	line-height: 35px;
-	color: $primary;
 
 	.list::before {
 		content: '•';
@@ -56,7 +55,8 @@ ul {
 	font-weight: 700;
 }
 
-.jeremy {
+.jeremy,
+.julia {
 	display: flex;
 	background-color: white;
 	padding: 40px;
@@ -76,22 +76,32 @@ ul {
 	}
 }
 
-.julia {
-	display: flex;
-	background-color: white;
-	padding: 40px;
-	width: 57%;
-	margin-top: 30px;
+.postForm {
 	position: relative;
-	left: 550px;
+	left: 510px;
+	padding: 50px;
+	width: 100%;
 
-	img {
-		width: 50%;
-		height: 110px;
-		margin-right: 20px;
+	.textContainer {
+		display: flex;
 	}
 
-	.date {
+	.commentForm {
+		display: flex;
 		flex-direction: column;
 	}
+
+	#comment {
+		margin-top: 20px;
+	}
+
+	.submitForm {
+		width: 60.5%;
+	}
+}
+
+#name,
+#emailAddress {
+	width: 100%;
+	padding: 10px;
 }

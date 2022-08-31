@@ -15,6 +15,10 @@ header {
 			}
 		}
 
+		.indexSophie {
+			font-size: 7rem;
+		}
+
 		.mainMenu {
 			display: flex;
 			width: 60%;
@@ -36,32 +40,6 @@ header {
 		}
 	}
 
-	// 	#menuClose {
-	// 		display: none;
-	// 	}
-
-	// 	.slideOutNav {
-	// 		background-color: $solidWhite;
-	// 		color: $primary;
-	// 		min-height: 100vh;
-	// 		position: fixed;
-	// 		top: 0;
-	// 		padding: 30px 50px;
-	// 		width: 100%;
-	// 		max-width: 450px;
-	// 		font-weight: bold;
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 		z-index: 20;
-	// 		left: -450px;
-	// 		transition: 0.3s;
-
-	// 		&.open {
-	// 			left: 0;
-	// 		}
-	// 	}
-	// }
-
 	h1 {
 		text-transform: uppercase;
 		line-height: 92px;
@@ -74,11 +52,11 @@ header {
 	}
 
 	.allAbout {
-		width: 200px;
-		height: 120px;
+		width: 150px;
+		height: 100px;
 		position: relative;
 		right: 50px;
-		top: 40px;
+		top: 10px;
 	}
 
 	.orangeEyes {

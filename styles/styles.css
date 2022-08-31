@@ -302,7 +302,7 @@ h1 {
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0px;
-  font-size: 8rem;
+  font-size: 80px;
   font-weight: bold;
 }
 
@@ -412,6 +412,9 @@ header .navBar .wrapper {
 header .navBar .wrapper .navItem {
   padding-top: 10px;
 }
+header .navBar .indexSophie {
+  font-size: 7rem;
+}
 header .navBar .mainMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -449,11 +452,11 @@ header .headerContainer {
           align-items: center;
 }
 header .allAbout {
-  width: 200px;
-  height: 120px;
+  width: 150px;
+  height: 100px;
   position: relative;
   right: 50px;
-  top: 40px;
+  top: 10px;
 }
 header .orangeEyes {
   position: relative;
@@ -700,7 +703,7 @@ footer p {
   }
   header .allAbout {
     position: relative;
-    left: 50px;
+    left: 180px;
   }
   header .headerImgOne {
     display: none;
@@ -714,7 +717,7 @@ footer p {
     display: none;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 806px) {
   header .allAbout {
     position: relative;
     left: 10px;
@@ -824,6 +827,10 @@ footer p {
     padding-left: 0;
   }
 }
+.categoryGaller {
+  padding-left: 0px !important;
+}
+
 main {
   background-color: #f0efed;
 }
@@ -961,11 +968,6 @@ footer p {
     width: 400px;
   }
 }
-@media (max-width: 874px) {
-  header {
-    display: none;
-  }
-}
 @media (max-width: 739px) {
   .info {
     -webkit-box-orient: vertical;
@@ -1056,7 +1058,6 @@ ul {
   list-style: none;
   padding-left: 30px;
   line-height: 35px;
-  color: #2c2c2c;
 }
 ul .list::before {
   content: "•";
@@ -1080,29 +1081,7 @@ ul .list::before {
   font-weight: 700;
 }
 
-.jeremy {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: white;
-  padding: 40px;
-  width: 57%;
-  margin-top: 30px;
-  position: relative;
-  left: 550px;
-}
-.jeremy img {
-  width: 50%;
-  height: 110px;
-  margin-right: 20px;
-}
-.jeremy .date {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
+.jeremy,
 .julia {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,14 +1093,49 @@ ul .list::before {
   position: relative;
   left: 550px;
 }
+.jeremy img,
 .julia img {
   width: 50%;
   height: 110px;
   margin-right: 20px;
 }
+.jeremy .date,
 .julia .date {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.postForm {
+  position: relative;
+  left: 510px;
+  padding: 50px;
+  width: 100%;
+}
+.postForm .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.postForm .commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.postForm #comment {
+  margin-top: 20px;
+}
+.postForm .submitForm {
+  width: 60.5%;
+}
+
+#name,
+#emailAddress {
+  width: 100%;
+  padding: 10px;
 }
