@@ -1,0 +1,97 @@
+h1 {
+	position: relative;
+	bottom: 50px;
+	font-size: 80px;
+}
+
+.blogger {
+	display: flex;
+}
+.aboutSophie {
+	width: 90%;
+	background-color: white;
+	padding: 40px 40px 20px 40px;
+	text-align: left;
+
+	h3 {
+		padding-top: 30px;
+	}
+}
+.recentPostsBackground {
+	background-color: white;
+	width: 90%;
+	margin-top: 25px;
+	padding: 40px 40px;
+
+	h3 {
+		margin-bottom: 30px;
+	}
+}
+
+ul {
+	list-style: none;
+	padding-left: 30px;
+	line-height: 35px;
+	color: $primary;
+
+	.list::before {
+		content: '•';
+		color: $tertiary;
+		display: inline-block;
+		width: 1em;
+		margin-left: -1em;
+	}
+}
+
+.bloggerBackground {
+	background-color: white;
+	width: 100%;
+	padding: 40px 40px 0px 40px;
+}
+.italics {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.jeremy {
+	display: flex;
+	background-color: white;
+	padding: 40px;
+	width: 57%;
+	margin-top: 30px;
+	position: relative;
+	left: 550px;
+
+	img {
+		width: 50%;
+		height: 110px;
+		margin-right: 20px;
+	}
+
+	.date {
+		flex-direction: column;
+	}
+}
+
+.julia {
+	display: flex;
+	background-color: white;
+	padding: 40px;
+	width: 57%;
+	margin-top: 30px;
+	position: relative;
+	left: 550px;
+
+	img {
+		width: 50%;
+		height: 110px;
+		margin-right: 20px;
+	}
+
+	.date {
+		flex-direction: column;
+	}
+}

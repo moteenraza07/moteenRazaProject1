@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -1018,4 +1019,109 @@ footer p {
   .info .socialMediaIcons {
     width: 100%;
   }
+}
+h1 {
+  position: relative;
+  bottom: 50px;
+  font-size: 80px;
+}
+
+.blogger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutSophie {
+  width: 90%;
+  background-color: white;
+  padding: 40px 40px 20px 40px;
+  text-align: left;
+}
+.aboutSophie h3 {
+  padding-top: 30px;
+}
+
+.recentPostsBackground {
+  background-color: white;
+  width: 90%;
+  margin-top: 25px;
+  padding: 40px 40px;
+}
+.recentPostsBackground h3 {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 30px;
+  line-height: 35px;
+  color: #2c2c2c;
+}
+ul .list::before {
+  content: "•";
+  color: #f6a823;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.bloggerBackground {
+  background-color: white;
+  width: 100%;
+  padding: 40px 40px 0px 40px;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.jeremy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 40px;
+  width: 57%;
+  margin-top: 30px;
+  position: relative;
+  left: 550px;
+}
+.jeremy img {
+  width: 50%;
+  height: 110px;
+  margin-right: 20px;
+}
+.jeremy .date {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.julia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 40px;
+  width: 57%;
+  margin-top: 30px;
+  position: relative;
+  left: 550px;
+}
+.julia img {
+  width: 50%;
+  height: 110px;
+  margin-right: 20px;
+}
+.julia .date {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
