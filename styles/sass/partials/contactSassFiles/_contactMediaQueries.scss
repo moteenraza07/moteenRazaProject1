@@ -1,5 +1,24 @@
 // Media Query for the contact.html page
 
+
+	// @media (max-width: 1920px) {
+	// 	header {
+	// 		.hamBurgerMenu {
+	// 			display: none;
+	// 		}
+	// 		.mobileButton, .closeMenu {
+	// 			display: none;
+	// 		}
+	
+	// 		.mobileMenu {
+	// 			display: none;
+	// 		}
+	// 	}
+		
+		
+	// }
+
+
 @media (max-width: 1375px) {
 	.info {
 		.socialMedia {
@@ -60,6 +79,77 @@
 	}
 }
 
+
+	@media (max-width: 900px) {
+		
+		header {
+			
+			.navBar {
+	
+				padding: 0;
+				margin: 0;
+				.mainMenu {
+					display: none;
+					
+				}
+			}
+	
+	
+			.mobileButton {
+				display: block;
+				margin-top: 10px;
+			}
+	
+			.open {
+				display: none;
+	
+			}
+	
+			.show{
+				display:flex;
+				
+			}
+	
+			
+
+			.mobileMenu {
+				position: fixed;
+				width: 100%;
+			}
+
+			.closeMenuIcon{
+				display: none;
+			}
+
+	
+			
+			.navContainer {
+				display: flex;
+				justify-content: space-around;
+				background-color: black;
+				margin: 0;
+				padding: 15px;
+				font-size: 1.5rem;
+				width: 100%;
+				
+	
+				li {
+					font-family: $primaryFont;
+					text-transform: uppercase;
+				}
+	
+				a {
+					text-decoration: none;
+					color: $primary;
+					color: white;
+				}
+			}
+			
+			
+		}
+	}
+
+
 @media (max-width: 739px) {
 	.info {
 		flex-direction: column;
@@ -117,5 +207,9 @@
 		.socialMediaIcons {
 			width: 100%;
 		}
+	}
+
+	.closeMenuIcon{
+		display: none;
 	}
 }

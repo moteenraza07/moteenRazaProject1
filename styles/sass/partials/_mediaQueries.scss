@@ -1,9 +1,32 @@
 // Media Query for the index.html page
+@media (max-width: 1920px) {
+	header {
+		.hamBurgerMenu {
+			display: none;
+		}
+
+		.hamBurgerMenu {
+			display: none;
+		}
+
+		.mobileButton, .closeMenuIcon {
+			display: none;
+		}
+
+		.mobileMenu {
+			display: none;
+		}
+	}
+	
+	
+}
 @media (max-width: 1277px) {
 	header {
 		#menuClose {
 			display: none;
 		}
+
+		
 	}
 
 	main {
@@ -64,7 +87,7 @@
 		}
 
 		// citation for this hover effect
-		//Brandsmen (2017) thebrandsmen source code version 2.0 [source code] https://thebrandsmen.com/css-image-hover-effects/
+		// Brandsmen (2017) thebrandsmen source code version 2.0 [source code] https://thebrandsmen.com/css-image-hover-effects/
 
 		.journeyTextContainer {
 			text-align: center;
@@ -108,10 +131,73 @@
 @media (max-width: 900px) {
 	header {
 		.navBar {
+
+			padding: 0;
+			margin: 0;
 			.mainMenu {
 				display: none;
+				
 			}
 		}
+
+		.hamBurgerMenu {
+			display: block;
+			
+		}
+
+		.mobileButton {
+			display: block;
+			margin-top: 10px;
+		}
+
+		.open {
+			display: none;
+
+		}
+
+		.show{
+			display:flex;
+			
+		}
+
+		.btnContainer{
+			position: absolute;
+			left: 10px;
+			z-index: 100;
+		}
+		.closeMenuIcon {
+			display: none;
+		}
+
+		.closeMenu{
+			z-index: 1000;
+		}
+
+		
+		.navContainer {
+			display: flex;
+			justify-content: space-around;
+			background-color: black;
+			opacity: .9;
+			margin: 0;
+			padding: 15px;
+			font-size: 1.5rem;
+			width: 100%;
+			
+
+			li {
+				font-family: $primaryFont;
+				text-transform: uppercase;
+			}
+
+			a {
+				text-decoration: none;
+				color: $primary;
+				color: white;
+			}
+		}
+		
+		
 	}
 }
 

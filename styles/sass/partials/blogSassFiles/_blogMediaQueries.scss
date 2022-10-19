@@ -1,5 +1,7 @@
 // Media Query for the blog.html page
 
+
+
 @media (max-width: 1420px) {
 	.mediaQuery {
 		display: flex;
@@ -46,6 +48,78 @@
 		width: 150%;
 	}
 }
+
+@media (max-width: 900px) {
+	header {
+		.navBar {
+
+			padding: 0;
+			margin: 0;
+			.mainMenu {
+				display: none;
+				
+			}
+		}
+
+
+		.mobileButton {
+			display: block;
+			margin-top: 10px;
+		}
+
+		.open {
+			display: none;
+
+		}
+
+		.show{
+			display:flex;
+			
+		}
+
+		.btnContainer{
+			position: absolute;
+			left: 10px;
+			z-index: 100;
+		}
+
+		.closeMenuIcon {
+			display: none;
+		}
+
+		.closeMenu{
+			z-index: 1000;
+		}
+
+		.navContainer {
+			display: flex;
+			justify-content: space-around;
+			background-color: black;
+			margin: 0;
+			padding: 15px;
+			font-size: 1.5rem;
+			width: 100%;
+			
+
+			li {
+				font-family: $primaryFont;
+				text-transform: uppercase;
+			}
+
+			a {
+				text-decoration: none;
+				color: $primary;
+				color: white;
+			}
+		}
+		
+		.hiddenItems{
+			display: none;
+		}
+		
+	}
+}
+
 
 @media (max-width: 768px) {
 	.jeremy,
@@ -103,3 +177,4 @@
 		}
 	}
 }
+

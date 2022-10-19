@@ -1,0 +1,1299 @@
+@charset "UTF-8";
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.skipLink {
+  background: white;
+  color: black;
+  font-size: 1rem;
+  padding: 10px 0;
+  position: absolute;
+  left: -1000px;
+  top: 0;
+  z-index: 999;
+}
+.skipLink:focus {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: #2c2c2c;
+}
+
+h1 {
+  font-family: "Lora";
+  color: #2c2c2c;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Roboto";
+  color: #2c2c2c;
+  margin: 0;
+}
+
+h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.findOut {
+  text-transform: uppercase;
+  font-size: "Roboto";
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: #05afc1;
+  padding: 10px 30px;
+  border: none;
+}
+
+.readMore {
+  text-transform: uppercase;
+  font-size: "Roboto";
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: #05afc1;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+}
+
+.submitButton {
+  text-transform: uppercase;
+  font-size: "Roboto";
+  text-align: center;
+  line-height: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: #05afc1;
+  border: none;
+  margin-top: 15px;
+  padding: 10px 0;
+}
+
+p {
+  line-height: 32px;
+  font-family: "Roboto";
+  color: #2c2c2c;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  background-color: #f6a823;
+  padding: 0 0 10px 0;
+}
+header .navBar {
+  background-color: #f6a823;
+  padding: 25px 0;
+}
+header .navBar .wrapper, header .navBar .mobileMenu {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+header .navBar .wrapper .navItem, header .navBar .mobileMenu .navItem {
+  padding-top: 10px;
+}
+header .navBar .wrapper .mobileButton, header .navBar .mobileMenu .mobileButton {
+  font-size: 30px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: black;
+}
+header .navBar .wrapper .show, header .navBar .mobileMenu .show {
+  display: block;
+}
+header .navBar .wrapper .closeMenu, header .navBar .mobileMenu .closeMenu {
+  font-size: 30px;
+  margin-top: 15px;
+  left: 20px;
+  background: transparent;
+  border: none;
+  color: white;
+}
+header .navBar .indexSophie {
+  font-size: 7rem;
+}
+header .navBar .mainMenu {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+header .navBar .mainMenu li {
+  font-family: "Lora";
+  text-transform: uppercase;
+}
+header .navBar .mainMenu a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+header .navBar .mainMenu .logo {
+  font-size: 40px;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+header .navBar .mainMenu .fa-solid {
+  font-size: 50px;
+  background-color: black;
+}
+header h1 {
+  text-transform: uppercase;
+  line-height: 92px;
+}
+header .headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .allAbout {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  right: 50px;
+  top: 10px;
+}
+header .orangeEyes {
+  position: relative;
+  top: 90px;
+  box-shadow: 20px 20px white;
+}
+
+.whoIsSophie {
+  background-color: #f0efed;
+  padding: 100px 100px;
+}
+.whoIsSophie h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.whoIsSophie .firstParagraph {
+  width: 70%;
+}
+.whoIsSophie .findOut {
+  margin-top: 10px;
+}
+
+.favouriteThingsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.favouriteThingsContainer .dogWindow {
+  z-index: 5;
+  position: relative;
+  bottom: 45px;
+  box-shadow: -350px 15px #a82706, 20px 15px #a82706;
+}
+.favouriteThingsContainer .favouriteTextContainer {
+  width: 40%;
+  text-align: left;
+  padding-top: 61px;
+}
+
+.whereSheTravelled {
+  display: flex;
+  justify-content: space-between;
+}
+.whereSheTravelled .textContainerTravelled {
+  width: 40%;
+  text-align: right;
+  position: relative;
+  top: 20px;
+}
+.whereSheTravelled .blueBeachChairs {
+  z-index: 5;
+  position: relative;
+  top: 20px;
+  box-shadow: 380px 20px #f6a823, 15px 20px #f6a823;
+}
+
+.categories {
+  padding: 110px 0 30px 0;
+  background-color: #f0efed;
+}
+
+.categoryGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+}
+.categoryGallery .item {
+  width: 45%;
+  padding: 40px;
+  border-radius: 10%;
+  margin: 15px 0;
+}
+.categoryGallery .item a:hover, .categoryGallery .item a:focus {
+  transform: scale(0.9);
+}
+.categoryGallery .categoryLink {
+  display: flex;
+}
+.categoryGallery .iconColor {
+  position: relative;
+  background-color: #f6a823;
+  width: 10%;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+.categoryGallery .icon {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+}
+.categoryGallery .categoryParagraph {
+  text-align: left;
+  padding-left: 60px;
+  width: 120%;
+}
+
+.sophieJourney {
+  background-color: #f0efed;
+  padding: 90px 0;
+}
+
+.journeyContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.journeyContainer .sophieImg {
+  width: 30%;
+  box-shadow: 25px 20px #f6a823;
+}
+.journeyContainer .journeyTextContainer {
+  width: 60%;
+}
+.journeyContainer .journeyTextContainer .findOut {
+  position: relative;
+  top: 45px;
+}
+
+.imgGallery {
+  padding: 40px 0;
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+}
+
+.gallery {
+  width: 95%;
+}
+
+footer {
+  background-color: #2c2c2c;
+  position: relative;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 1920px) {
+  header .hamBurgerMenu {
+    display: none;
+  }
+  header .hamBurgerMenu {
+    display: none;
+  }
+  header .mobileButton, header .closeMenuIcon {
+    display: none;
+  }
+  header .mobileMenu {
+    display: none;
+  }
+}
+@media (max-width: 1277px) {
+  header #menuClose {
+    display: none;
+  }
+  main .favouriteThingsContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .favouriteThingsContainer .favouriteTextContainer {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 61px;
+  }
+  main .favouriteThingsContainer .dogWindow {
+    width: 100%;
+    box-shadow: none;
+  }
+  main .whereSheTravelled {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  main .whereSheTravelled .textContainerTravelled {
+    text-align: center;
+    width: 100%;
+    padding-top: 61px;
+  }
+  main .whereSheTravelled .blueBeachChairs {
+    padding-top: 0;
+    box-shadow: none;
+  }
+}
+@media (max-width: 1145px) {
+  section .journeyContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .sophieImg {
+    margin-bottom: 80px;
+  }
+  section .sophieImg {
+    transition: 1s ease;
+  }
+  section .sophieImg:hover {
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+  }
+  section .journeyTextContainer {
+    text-align: center;
+  }
+  .categories .icon {
+    position: absolute;
+    right: 9px;
+  }
+}
+@media (max-width: 950px) {
+  header .headerContainer {
+    padding-bottom: 50px;
+  }
+  header .allAboutSophie {
+    text-align: center;
+    width: 100%;
+  }
+  header .allAbout {
+    position: relative;
+    left: 180px;
+  }
+  header .headerImgOne {
+    display: none;
+  }
+  .whoIsSophie {
+    text-align: center;
+  }
+}
+@media (max-width: 900px) {
+  header .navBar {
+    padding: 0;
+    margin: 0;
+  }
+  header .navBar .mainMenu {
+    display: none;
+  }
+  header .hamBurgerMenu {
+    display: block;
+  }
+  header .mobileButton {
+    display: block;
+    margin-top: 10px;
+  }
+  header .open {
+    display: none;
+  }
+  header .show {
+    display: flex;
+  }
+  header .btnContainer {
+    position: absolute;
+    left: 10px;
+    z-index: 100;
+  }
+  header .closeMenuIcon {
+    display: none;
+  }
+  header .closeMenu {
+    z-index: 1000;
+  }
+  header .navContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  header .navContainer li {
+    font-family: "Lora";
+    text-transform: uppercase;
+  }
+  header .navContainer a {
+    text-decoration: none;
+    color: #2c2c2c;
+    color: white;
+  }
+}
+@media (max-width: 806px) {
+  header .allAbout {
+    position: relative;
+    left: 10px;
+  }
+  .categories .iconColor {
+    width: 13%;
+  }
+  .categories .icon {
+    position: absolute;
+    right: 9px;
+  }
+}
+@media (max-width: 791px) {
+  .categories .categoryLink {
+    background-color: #f6a823;
+  }
+  .categories .iconColor {
+    display: none;
+  }
+  .categories .categoryParagraph {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 732px) {
+  header h1 {
+    font-size: 7rem;
+  }
+  .imgGallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgGallery li {
+    width: 90%;
+    padding: 10px;
+  }
+}
+@media (max-width: 639px) {
+  header h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 560px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 475px) {
+  header h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 464px) {
+  .categories .item {
+    width: 80%;
+    padding: 25px 30px;
+  }
+  .categories h3 {
+    text-align: center;
+    width: 100%;
+  }
+}
+@media (max-width: 396px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  .whoIsSophie .findOut {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .whoIsSophie {
+    padding: 100px 50px;
+  }
+  main .favouriteThingsContainer {
+    align-items: center;
+  }
+  main .favouriteThingsContainer .favouriteTextContainer {
+    width: 80%;
+  }
+  main .whereSheTravelled {
+    align-items: center;
+  }
+  main .whereSheTravelled .textContainerTravelled {
+    width: 80%;
+  }
+  .journeyContainer .sophieImg {
+    width: 60%;
+  }
+  .categories .item {
+    padding: 0;
+    width: 80%;
+  }
+  .categories .categoryParagraph {
+    width: 100%;
+    text-align: center;
+  }
+  .imgGallery {
+    padding-left: 0;
+  }
+}
+.categoryGaller {
+  padding-left: 0px !important;
+}
+
+main {
+  background-color: #f0efed;
+}
+
+.backgroundImg {
+  background-image: url(../../../../assets/contact-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 210px 0;
+}
+.backgroundImg h1 {
+  font-size: 80px;
+  position: relative;
+  top: 255px;
+}
+
+.info {
+  display: flex;
+  padding: 90px 0 190px 0;
+  justify-content: space-between;
+}
+.info .socialMedia {
+  background-color: white;
+  height: 320px;
+  width: 430px;
+  color: #f6a823;
+  padding: 50px 50px;
+}
+.info .socialMediaIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+.info .socialMediaIcons .socialIcon {
+  font-size: 30px;
+}
+.info .email {
+  margin-top: 30px;
+  color: #2c2c2c;
+  font-weight: bold;
+}
+.info .address {
+  padding-top: 20px;
+}
+.info .submitForm {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+.info .submitForm input {
+  padding: 20px 0;
+}
+.info .submitForm .textContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.info .submitForm .textContainer input {
+  width: 49%;
+  justify-content: space-between;
+  padding-left: 20px;
+  border: 0;
+}
+.info textarea {
+  border: 0;
+  border-bottom: 1px solid lightgray;
+  padding: 30px 20px;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1375px) {
+  .info .socialMedia {
+    width: 30%;
+  }
+}
+@media (max-width: 1275px) {
+  .info .socialMedia {
+    width: 25%;
+    padding: 30px 30px;
+  }
+}
+@media (max-width: 1186px) {
+  .info .submitForm {
+    width: 700px;
+  }
+}
+@media (max-width: 1110px) {
+  .info .submitForm {
+    width: 600px;
+  }
+}
+@media (max-width: 954px) {
+  .backgroundImg {
+    padding: 100px 0;
+  }
+  .backgroundImg h1 {
+    position: relative;
+    top: 145px;
+  }
+  .info .socialMedia {
+    width: 40%;
+  }
+  .info .submitForm {
+    width: 500px;
+  }
+}
+@media (max-width: 924px) {
+  .info .submitForm {
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  header .navBar {
+    padding: 0;
+    margin: 0;
+  }
+  header .navBar .mainMenu {
+    display: none;
+  }
+  header .mobileButton {
+    display: block;
+    margin-top: 10px;
+  }
+  header .open {
+    display: none;
+  }
+  header .show {
+    display: flex;
+  }
+  header .mobileMenu {
+    position: fixed;
+    width: 100%;
+  }
+  header .closeMenuIcon {
+    display: none;
+  }
+  header .navContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  header .navContainer li {
+    font-family: "Lora";
+    text-transform: uppercase;
+  }
+  header .navContainer a {
+    text-decoration: none;
+    color: #2c2c2c;
+    color: white;
+  }
+}
+@media (max-width: 739px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 9 150px 0;
+  }
+  .info .socialMedia {
+    width: 80%;
+  }
+  .info .submitForm {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 655px) {
+  .backgroundImg {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 577px) {
+  .backgroundImg {
+    padding: 0;
+  }
+  .backgroundImg h1 {
+    position: relative;
+    top: 195px;
+    width: 100%;
+    text-align: center;
+  }
+  .info {
+    padding: 240px 0 190px 0;
+  }
+}
+@media (max-width: 320px) {
+  .backgroundImg {
+    background-size: contain;
+  }
+  .backgroundImg h1 {
+    position: relative;
+    top: 95px;
+    width: 100%;
+  }
+  .info {
+    padding: 150px 0 190px 0;
+  }
+  .info .socialMediaIcons {
+    width: 100%;
+  }
+  .closeMenuIcon {
+    display: none;
+  }
+}
+h1 {
+  position: relative;
+  bottom: 50px;
+  font-size: 80px;
+}
+
+.blogger {
+  display: flex;
+}
+
+.aboutSophie {
+  width: 90%;
+  background-color: white;
+  padding: 40px 40px 20px 40px;
+  text-align: left;
+}
+.aboutSophie h3 {
+  padding-top: 30px;
+}
+
+.recentPostsBackground {
+  background-color: white;
+  width: 90%;
+  margin-top: 25px;
+  padding: 40px 40px;
+}
+.recentPostsBackground h3 {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 30px;
+  line-height: 35px;
+}
+ul .list::before {
+  content: "•";
+  color: #f6a823;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.bloggerBackground {
+  background-color: white;
+  width: 100%;
+  padding: 40px 40px 0px 40px;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.jeremy,
+.julia {
+  display: flex;
+  background-color: white;
+  padding: 40px;
+  width: 57%;
+  margin-top: 30px;
+  position: relative;
+  left: 550px;
+}
+.jeremy img,
+.julia img {
+  width: 50%;
+  height: 110px;
+  margin-right: 20px;
+}
+.jeremy .date,
+.julia .date {
+  flex-direction: column;
+}
+
+.postForm {
+  position: relative;
+  left: 510px;
+  padding: 50px;
+  width: 100%;
+}
+.postForm .textContainer {
+  display: flex;
+}
+.postForm .commentForm {
+  display: flex;
+  flex-direction: column;
+}
+.postForm #comment {
+  margin-top: 20px;
+}
+.postForm .submitForm {
+  width: 60.5%;
+}
+
+#name,
+#emailAddress {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (max-width: 1420px) {
+  .mediaQuery {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .mediaQuery .jeremy,
+.mediaQuery .julia {
+    width: 40%;
+    left: 0px;
+  }
+  .postForm {
+    left: 0px;
+    width: 170%;
+  }
+  .postForm .textContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .postForm #name,
+.postForm #emailAddress {
+    width: 40%;
+  }
+}
+@media (max-width: 1200px) {
+  .jeremy,
+.julia {
+    flex-direction: column;
+    width: 30%;
+  }
+  .jeremy img,
+.julia img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1056px) {
+  .postForm {
+    width: 150%;
+  }
+}
+@media (max-width: 900px) {
+  header .navBar {
+    padding: 0;
+    margin: 0;
+  }
+  header .navBar .mainMenu {
+    display: none;
+  }
+  header .mobileButton {
+    display: block;
+    margin-top: 10px;
+  }
+  header .open {
+    display: none;
+  }
+  header .show {
+    display: flex;
+  }
+  header .btnContainer {
+    position: absolute;
+    left: 10px;
+    z-index: 100;
+  }
+  header .closeMenuIcon {
+    display: none;
+  }
+  header .closeMenu {
+    z-index: 1000;
+  }
+  header .navContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  header .navContainer li {
+    font-family: "Lora";
+    text-transform: uppercase;
+  }
+  header .navContainer a {
+    text-decoration: none;
+    color: #2c2c2c;
+    color: white;
+  }
+  header .hiddenItems {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .jeremy img,
+.julia img {
+    width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .textContainer {
+    flex-direction: column;
+  }
+  .textContainer #name,
+.textContainer #emailAddress {
+    width: 100%;
+  }
+}
+@media (max-width: 488px) {
+  .jeremy img,
+.julia img {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .blogger {
+    flex-direction: column;
+  }
+  .blogger .aboutSophie,
+.blogger .recentPostsBackground {
+    width: 100%;
+  }
+  .blogger .bloggerBackground {
+    margin-top: 20px;
+  }
+  .mediaQuery {
+    flex-direction: column;
+  }
+  .mediaQuery .jeremy,
+.mediaQuery .julia {
+    width: 100%;
+  }
+  .mediaQuery .jeremy img,
+.mediaQuery .julia img {
+    width: 50%;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Offside&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/sass/styles.css" />
 		<script
 			src="https://kit.fontawesome.com/911821ed0d.js"
 			crossorigin="anonymous"
@@ -32,7 +32,30 @@
 						<li class="navItem"><a href="./blog.html">Blog</a></li>
 						<li class="navItem"><a href="./contact.html">Contact</a></li>
 					</ul>
+					
+						<!-- <button class="mobileButton"><i class="fa-solid fa-bars hamBurgerMenu"></i></button>
+						<button class="closeMenuIcon"><i class="fa-solid fa-x"></i></button> -->
+					
 				</div>
+
+				<!--Mobile Menu-->
+				<div class="mobileMenu wrapper">
+					<ul class="navContainer hiddenItems">
+						<li class="navItem"><a href="#">Home</a></li>
+						<li class="navItem"><a href="#">About</a></li>
+						<li class="navItem"><a href="./blog.html">Blog</a></li>
+						<li class="navItem"><a href="./contact.html">Contact</a></li>
+					</ul>
+
+					<div class="btnContainer">
+					<button class="mobileButton"><i class="fa-solid fa-bars hamBurgerMenu"></i></button>
+					<button class="closeMenuIcon"><i class="fa-solid fa-x"></i></button>
+					</div>
+				</div>
+				
+					
+				
+				
 			</nav>
 			<!-- Beginning of navBar -->
 
@@ -254,4 +277,23 @@
 		<footer><p>Copyright &copy; 2018 HackerYou</p></footer>
 		<!-- Footer -->
 	</body>
+
+	<script src="script.js">
+// 		const app = {};
+
+// // when user clicks, show the mobile menu
+
+// 		app.button = document.querySelector('.mobileButton');
+// 		console.log(app.button);
+
+// 		app.mobileNav = document.querySelector('.mainMenu');
+
+
+// 		app.button.addEventListener("click", function (){
+//     // toggle on and off
+//     // grab the mobile menu and when i click it display the menu
+    
+//     	app.mobileNav.classList.toggle('show');
+// })
+	</script>
 </html>

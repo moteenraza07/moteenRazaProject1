@@ -11,7 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Offside&family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/sass/styles.css" />
 		<script
 			src="https://kit.fontawesome.com/911821ed0d.js"
 			crossorigin="anonymous"
@@ -33,7 +33,24 @@
 						<li class="navItem"><a href="#">Contact</a></li>
 					</ul>
 					<!-- End of navBar -->
+
+						
 				</div>
+
+				<!--Mobile Menu-->
+				<div class="mobileMenu wrapper">
+					<ul class="navContainer hiddenItems">
+						<li class="navItem"><a href="./index.html">Home</a></li>
+						<li class="navItem"><a href="#">About</a></li>
+						<li class="navItem"><a href="./blog.html">Blog</a></li>
+						<li class="navItem"><a href="#">Contact</a></li>
+					</ul>
+					<div class="btnContainer">
+						<button class="mobileButton"><i class="fa-solid fa-bars hamBurgerMenu"></i></button>
+						<button class="closeMenuIcon"><i class="fa-solid fa-x"></i></button>
+					</div>
+				</div>
+						
 			</nav>
 		</header>
 		<!-- End of header -->
@@ -85,6 +102,7 @@
 								id="emailAddress"
 								placeholder="Email address"
 							/>
+							<span id="errorOne"></span><br>
 						</div>
 						<label for="message" class="sr-only">Message</label>
 						<textarea
@@ -94,7 +112,7 @@
 							rows="10"
 							placeholder="Message"
 						></textarea>
-						<button class="submitButton">Submit</button>
+						<button class="submitButton submitButtonForm">Submit</button>
 					</form>
 					<!-- End of Form -->
 				</div>
@@ -105,4 +123,6 @@
 		<footer><p>Copyright &copy; 2018 HackerYou</p></footer>
 		<!-- Footer -->
 	</body>
+
+	<script src="script.js"></script>
 </html>
