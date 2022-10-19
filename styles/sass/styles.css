@@ -920,6 +920,10 @@ footer p {
   padding: 0;
 }
 
+#errorOne, #errorTwo {
+  color: red;
+}
+
 @media (max-width: 1375px) {
   .info .socialMedia {
     width: 30%;

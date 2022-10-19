@@ -28,11 +28,10 @@ app.button.addEventListener("click", function (){
     // grab the mobile menu and when i click it display the menu
    
         app.button.classList.toggle('open');
-        // app.mobileNav.classList.toggle('show');
         app.navContainer.classList.remove('hiddenItems')
         app.close.classList.remove('closeMenuIcon');
         app.close.classList.add('closeMenu');
-        // app.close.classList.add('closeMenuIcon');
+    
 })
 
 app.close.addEventListener("click", function (){
@@ -41,30 +40,43 @@ app.close.addEventListener("click", function (){
    
         
         app.button.classList.toggle('open');
-        // app.mobileNav.classList.toggle('show');
         app.navContainer.classList.add('hiddenItems')
         app.close.classList.add('closeMenuIcon');
         app.close.classList.remove('closeMenu');
         
 })
 
-function validate(e) {
+function validateUserName(e) {
     e.preventDefault();
     const username = document.getElementById('name').value;
-    const errorMessage  = document.getElementById('errorOne');
+    const errorMessageOne  = document.getElementById('errorOne');
+    
     if(username.length < 2) {
-        errorMessage.textContent = "username must have minimum of 2 characters";
+        errorMessageOne.textContent = "Username must have minimum of 2 characters";
         return false;
     }else {
-        errorMessage.textContent = "";
+        errorMessageOne.textContent = "";
+        return false;
+    }
+
+}
+
+function validateEmailAddress(e) {
+    e.preventDefault();
+    const emailAddress = document.getElementById(`emailAddress`).value;
+    const errerMessageTwo = document.getElementById(`errorTwo`);
+
+    if(emailAddress.length < 2) {
+        errerMessageTwo.textContent = "Email Address must have a of 2 characters";
+        return false;
+    }else {
+        errerMessageTwo.textContent = "";
         return false;
     }
 }
 
 app.submitButton.addEventListener("click", function(e) {
-    // const errorMessage = document.createElement('p');
-    // console.log(errorMessage);
-    // app.submitButton.appendChild(errorMessage);
-    validate(e);
+    validateUserName(e);
+    validateEmailAddress(e);
     
 })
