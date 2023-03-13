@@ -412,6 +412,9 @@ header .navBar .wrapper {
 header .navBar .wrapper .navItem {
   padding-top: 10px;
 }
+header .navBar .wrapper .navItem:hover {
+  border-bottom: 2px solid black;
+}
 header .navBar .indexSophie {
   font-size: 7rem;
 }
@@ -487,6 +490,13 @@ header .orangeEyes {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.favouriteThingsContainer h3 {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+.favouriteThingsContainer .readMore {
+  margin-left: 25px;
 }
 .favouriteThingsContainer .dogWindow {
   z-index: 5;
@@ -836,7 +846,7 @@ main {
 }
 
 .backgroundImg {
-  background-image: url(../assets/contact-image-1.jpg);
+  background-image: url(../../../../assets/contact-image-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -871,7 +881,8 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 50%;
+  padding-left: 0px;
 }
 .info .socialMediaIcons .socialIcon {
   font-size: 30px;
@@ -904,17 +915,21 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 95%;
 }
 .info .submitForm .textContainer input {
-  width: 49%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 20px;
-  border: 0;
+}
+.info .submitForm .textContainer #name, .info .submitForm .textContainer #emailAddress {
+  width: 45%;
+}
+.info .submitForm #message, .info .submitForm .submitButton {
+  width: 95%;
 }
 .info textarea {
-  border: 0;
   border-bottom: 1px solid lightgray;
   padding: 30px 20px;
   margin-top: 15px;
@@ -925,6 +940,10 @@ main {
 footer p {
   margin: 0;
   padding: 0;
+}
+
+#errorOne, #errorTwo {
+  color: red;
 }
 
 @media (max-width: 1375px) {
@@ -1150,7 +1169,7 @@ ul .list::before {
         justify-content: space-around;
   }
   .mediaQuery .jeremy,
-.mediaQuery .julia {
+  .mediaQuery .julia {
     width: 40%;
     left: 0px;
   }
@@ -1165,13 +1184,13 @@ ul .list::before {
             justify-content: space-between;
   }
   .postForm #name,
-.postForm #emailAddress {
+  .postForm #emailAddress {
     width: 40%;
   }
 }
 @media (max-width: 1200px) {
   .jeremy,
-.julia {
+  .julia {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1179,7 +1198,7 @@ ul .list::before {
     width: 30%;
   }
   .jeremy img,
-.julia img {
+  .julia img {
     width: 30%;
     margin-bottom: 10px;
   }
@@ -1191,7 +1210,7 @@ ul .list::before {
 }
 @media (max-width: 768px) {
   .jeremy img,
-.julia img {
+  .julia img {
     width: 50%;
   }
 }
@@ -1203,13 +1222,13 @@ ul .list::before {
             flex-direction: column;
   }
   .textContainer #name,
-.textContainer #emailAddress {
+  .textContainer #emailAddress {
     width: 100%;
   }
 }
 @media (max-width: 488px) {
   .jeremy img,
-.julia img {
+  .julia img {
     width: 100%;
   }
 }
@@ -1221,7 +1240,7 @@ ul .list::before {
             flex-direction: column;
   }
   .blogger .aboutSophie,
-.blogger .recentPostsBackground {
+  .blogger .recentPostsBackground {
     width: 100%;
   }
   .blogger .bloggerBackground {
@@ -1234,11 +1253,11 @@ ul .list::before {
             flex-direction: column;
   }
   .mediaQuery .jeremy,
-.mediaQuery .julia {
+  .mediaQuery .julia {
     width: 100%;
   }
   .mediaQuery .jeremy img,
-.mediaQuery .julia img {
+  .mediaQuery .julia img {
     width: 50%;
   }
 }

@@ -5,7 +5,7 @@ main {
 }
 
 .backgroundImg {
-	background-image: url(../assets/contact-image-1.jpg);
+	background-image: url(../../../../assets/contact-image-1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -33,7 +33,12 @@ main {
 	.socialMediaIcons {
 		display: flex;
 		justify-content: space-between;
-		width: 60%;
+		width: 50%;
+		padding-left: 0px
+		
+		
+		
+		;
 
 		.socialIcon {
 			font-size: 30px;
@@ -62,18 +67,25 @@ main {
 		.textContainer {
 			display: flex;
 			justify-content: space-between;
+			width: 95%;
 
 			input {
-				width: 49%;
 				justify-content: space-between;
 				padding-left: 20px;
-				border: 0;
+				
 			}
+
+			#name,#emailAddress {
+				width: 45%;
+			}
+		}
+
+		#message, .submitButton {
+			width: 95%;
 		}
 	}
 
 	textarea {
-		border: 0;
 		border-bottom: 1px solid lightgray;
 		padding: 30px 20px;
 		margin-top: 15px;
@@ -86,4 +98,8 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+}
+
+#errorOne, #errorTwo {
+	color: red;
 }
