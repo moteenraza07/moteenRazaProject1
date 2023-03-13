@@ -4,6 +4,11 @@
 	display: flex;
 	justify-content: space-between;
 
+	h3 {
+		padding-left: 20px;
+		margin-bottom: 20px;
+	}
+
 	.dogWindow {
 		z-index: 5;
 		position: relative;
@@ -15,6 +20,10 @@
 		width: 40%;
 		text-align: left;
 		padding-top: 61px;
+
+		.readMore {
+			margin-left: 25px;
+		}
 	}
 }
 

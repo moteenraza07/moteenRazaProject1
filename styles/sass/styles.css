@@ -399,7 +399,9 @@ header .navBar {
 header .navBar .wrapper, header .navBar .mobileMenu {
   display: flex;
   justify-content: center;
-  position: fixed;
+}
+header .navBar .wrapper .navContainer, header .navBar .mobileMenu .navContainer {
+  display: none;
 }
 header .navBar .wrapper .navItem, header .navBar .mobileMenu .navItem {
   padding-top: 10px;
@@ -427,8 +429,11 @@ header .navBar .indexSophie {
 }
 header .navBar .mainMenu {
   display: flex;
-  width: 60%;
+  width: 100%;
   justify-content: space-around;
+}
+header .navBar .mainMenu .navItem:hover {
+  border-bottom: 2px solid black;
 }
 header .navBar .mainMenu li {
   font-family: "Lora";
@@ -488,6 +493,10 @@ header .orangeEyes {
   display: flex;
   justify-content: space-between;
 }
+.favouriteThingsContainer h3 {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
 .favouriteThingsContainer .dogWindow {
   z-index: 5;
   position: relative;
@@ -498,6 +507,9 @@ header .orangeEyes {
   width: 40%;
   text-align: left;
   padding-top: 61px;
+}
+.favouriteThingsContainer .favouriteTextContainer .readMore {
+  margin-left: 25px;
 }
 
 .whereSheTravelled {
@@ -876,7 +888,8 @@ main {
 .info .socialMediaIcons {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 50%;
+  padding-left: 0px;
 }
 .info .socialMediaIcons .socialIcon {
   font-size: 30px;
@@ -900,15 +913,19 @@ main {
 .info .submitForm .textContainer {
   display: flex;
   justify-content: space-between;
+  width: 95%;
 }
 .info .submitForm .textContainer input {
-  width: 49%;
   justify-content: space-between;
   padding-left: 20px;
-  border: 0;
+}
+.info .submitForm .textContainer #name, .info .submitForm .textContainer #emailAddress {
+  width: 45%;
+}
+.info .submitForm #message, .info .submitForm .submitButton {
+  width: 95%;
 }
 .info textarea {
-  border: 0;
   border-bottom: 1px solid lightgray;
   padding: 30px 20px;
   margin-top: 15px;
@@ -1172,7 +1189,7 @@ ul .list::before {
     justify-content: space-around;
   }
   .mediaQuery .jeremy,
-.mediaQuery .julia {
+  .mediaQuery .julia {
     width: 40%;
     left: 0px;
   }
@@ -1185,18 +1202,18 @@ ul .list::before {
     justify-content: space-between;
   }
   .postForm #name,
-.postForm #emailAddress {
+  .postForm #emailAddress {
     width: 40%;
   }
 }
 @media (max-width: 1200px) {
   .jeremy,
-.julia {
+  .julia {
     flex-direction: column;
     width: 30%;
   }
   .jeremy img,
-.julia img {
+  .julia img {
     width: 30%;
     margin-bottom: 10px;
   }
@@ -1259,7 +1276,7 @@ ul .list::before {
 }
 @media (max-width: 768px) {
   .jeremy img,
-.julia img {
+  .julia img {
     width: 50%;
   }
 }
@@ -1268,13 +1285,13 @@ ul .list::before {
     flex-direction: column;
   }
   .textContainer #name,
-.textContainer #emailAddress {
+  .textContainer #emailAddress {
     width: 100%;
   }
 }
 @media (max-width: 488px) {
   .jeremy img,
-.julia img {
+  .julia img {
     width: 100%;
   }
 }
@@ -1283,7 +1300,7 @@ ul .list::before {
     flex-direction: column;
   }
   .blogger .aboutSophie,
-.blogger .recentPostsBackground {
+  .blogger .recentPostsBackground {
     width: 100%;
   }
   .blogger .bloggerBackground {
@@ -1293,11 +1310,11 @@ ul .list::before {
     flex-direction: column;
   }
   .mediaQuery .jeremy,
-.mediaQuery .julia {
+  .mediaQuery .julia {
     width: 100%;
   }
   .mediaQuery .jeremy img,
-.mediaQuery .julia img {
+  .mediaQuery .julia img {
     width: 50%;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,11 @@ header {
 		.wrapper, .mobileMenu {
 			display: flex;
 			justify-content: center;
-			position: fixed;
+
+			.navContainer {
+				display: none;
+			};
+			
 
 			.navItem {
 				padding-top: 10px;
@@ -50,8 +54,12 @@ header {
 
 		.mainMenu {
 			display: flex;
-			width: 60%;
+			width: 100%;
 			justify-content: space-around;
+
+			.navItem:hover {
+				border-bottom: 2px solid black;
+			}
 
 			li {
 				font-family: $primaryFont;
